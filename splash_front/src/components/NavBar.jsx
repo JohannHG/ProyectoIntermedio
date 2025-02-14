@@ -72,7 +72,7 @@ const NavBar = () => {
                             <li className="px-4 py-2 hover:bg-blue-700 cursor-pointer">Personalizada</li>
                         </ul>
                     </li>
-                    
+
                     <li className="hover:text-gray-300 cursor-pointer">Galería</li>
                     <li className="hover:text-gray-300 cursor-pointer">Eventos</li>
                 </ul>
