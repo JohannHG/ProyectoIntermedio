@@ -58,16 +58,21 @@ const NavBar = () => {
                 {/* Menú de navegación (oculto en móviles) */}
                 <ul className="hidden md:flex gap-6 text-sm font-semibold">
                     <li className="hover:text-gray-300 cursor-pointer">Inicio</li>
+                    <li className="hover:text-gray-300 cursor-pointer">Horarios y Precios</li>
                     <li className="relative group">
-                        <span className="hover:text-gray-300 cursor-pointer">Programas</span>
+                        <span className="hover:text-gray-300 cursor-pointer">Niveles</span>
                         {/* Dropdown */}
                         <ul className="absolute hidden group-hover:block bg-[#003DA5] text-white mt-2 w-40 shadow-lg">
-                            <li className="px-4 py-2 hover:bg-blue-700 cursor-pointer">Clases normales</li>
-                            <li className="px-4 py-2 hover:bg-blue-700 cursor-pointer">Clases personalizadas</li>
-                            <li className="px-4 py-2 hover:bg-blue-700 cursor-pointer">Clases matroclases</li>
+                            <li className="px-4 py-2 hover:bg-blue-700 cursor-pointer">Principiante A</li>
+                            <li className="px-4 py-2 hover:bg-blue-700 cursor-pointer">Principiante B</li>
+                            <li className="px-4 py-2 hover:bg-blue-700 cursor-pointer">Intermedio A</li>
+                            <li className="px-4 py-2 hover:bg-blue-700 cursor-pointer">Intermedio B</li>
+                            <li className="px-4 py-2 hover:bg-blue-700 cursor-pointer">Avanzado</li>
+                            <li className="px-4 py-2 hover:bg-blue-700 cursor-pointer">Matroclase</li>
+                            <li className="px-4 py-2 hover:bg-blue-700 cursor-pointer">Personalizada</li>
                         </ul>
                     </li>
-                    <li className="hover:text-gray-300 cursor-pointer">Precios</li>
+                    
                     <li className="hover:text-gray-300 cursor-pointer">Galería</li>
                     <li className="hover:text-gray-300 cursor-pointer">Eventos</li>
                 </ul>
