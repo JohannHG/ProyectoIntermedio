@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FaInstagram, FaFacebook, FaPhone, FaEnvelope, FaCircleXmark, FaBars } from 'react-icons/fa6'
+import { FaSquareWhatsapp, FaFacebook, FaPhone, FaEnvelope, FaCircleXmark, FaBars } from 'react-icons/fa6'
 
 const NavBar = () => {
 
@@ -11,9 +11,7 @@ const NavBar = () => {
             <div className="bg-[#00124E] text-white text-sm py-2 px-6 flex justify-between items-center">
                 {/* Redes sociales y botón de contacto (ahora alineados a la derecha en móviles) */}
                 <div className="hidden md:flex gap-4">
-                    <a href="#" className="hover:text-gray-300">
-                        <FaInstagram size={20} />
-                    </a>
+
                     <a href="#" className="hover:text-gray-300">
                         <FaFacebook size={20} />
                     </a>
@@ -26,9 +24,9 @@ const NavBar = () => {
                     </div>
                     <a
                         href="#"
-                        className="bg-yellow-400 text-black px-4 py-2 flex items-center gap-2 rounded-md hover:bg-yellow-500"
+                        className="bg-green-500 text-black px-4 py-2 flex items-center gap-2 rounded-md hover:bg-green-400"
                     >
-                        <FaEnvelope size={16} />
+                        <FaSquareWhatsapp size={28} />
                         Contáctanos
                     </a>
                 </div>
@@ -44,9 +42,7 @@ const NavBar = () => {
 
                 {/* Icono de menú hamburguesa (solo en móviles) */}
                 <div className="md:hidden flex items-center gap-4">
-                    <a href="#" className="hover:text-gray-300">
-                        <FaInstagram size={20} />
-                    </a>
+
                     <a href="#" className="hover:text-gray-300">
                         <FaFacebook size={20} />
                     </a>
