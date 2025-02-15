@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { FaSquareWhatsapp, FaFacebook, FaPhone, FaEnvelope, FaCircleXmark, FaBars } from 'react-icons/fa6'
+import splashLogo from "../img/splash.jpg";
 
 const NavBar = () => {
 
@@ -13,17 +14,16 @@ const NavBar = () => {
                 <div className="hidden md:flex gap-4">
 
                     <a href="#" className="hover:text-gray-300">
-                        <FaFacebook size={20} />
+                        <FaFacebook size={35} />
                     </a>
                 </div>
 
                 <div className="flex items-center gap-4">
-                    <div className="hidden md:flex items-center gap-2">
-                        <FaPhone size={16} />
-                        <span>5510265574</span>
-                    </div>
+
+                    <img className="rounded-md" alt="Vista previa del logotipo" src={splashLogo} width="59"></img>
+
                     <a
-                        href="#"
+                        href="https://wa.me/5215562170243?text=Hola%20quiero%20información%20acerca%20de%20las%20clases%20de%20natación."
                         className="bg-green-500 text-black px-4 py-2 flex items-center gap-2 rounded-md hover:bg-green-400"
                     >
                         <FaSquareWhatsapp size={28} />
@@ -35,16 +35,16 @@ const NavBar = () => {
             {/* Menú principal */}
             <div className="bg-[#003DA5] text-white py-4 px-6 flex justify-between items-center">
                 {/* Logo */}
-                <div className="text-xl font-bold">
+                <div className="text-2xl font-bold">
                     <span className="text-white">Splash</span>
-                    <p className="text-xs text-gray-200">Natación confort</p>
+                    <p className="text-sm text-gray-200">Natación confort</p>
                 </div>
 
                 {/* Icono de menú hamburguesa (solo en móviles) */}
                 <div className="md:hidden flex items-center gap-4">
 
                     <a href="#" className="hover:text-gray-300">
-                        <FaFacebook size={20} />
+                        <FaFacebook size={35} />
                     </a>
                     <button onClick={() => setMenuOpen(!menuOpen)}>
                         {menuOpen ? <FaCircleXmark size={24} /> : <FaBars size={24} />}
@@ -52,7 +52,7 @@ const NavBar = () => {
                 </div>
 
                 {/* Menú de navegación (oculto en móviles) */}
-                <ul className="hidden md:flex gap-6 text-sm font-semibold">
+                <ul className="hidden md:flex gap-6 text-lg font-semibold">
                     <li className="hover:text-gray-300 cursor-pointer">Inicio</li>
                     <li className="hover:text-gray-300 cursor-pointer">Horarios y Precios</li>
                     <li className="relative group">
