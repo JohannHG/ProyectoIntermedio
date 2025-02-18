@@ -5,9 +5,7 @@ import Footer from '../Footer'
 const IntermedioB = () => {
     return (
         <>
-            <NavBar />
             <div>IntermedioB</div>
-            <Footer />
         </>
 
     )

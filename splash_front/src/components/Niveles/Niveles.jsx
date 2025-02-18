@@ -6,11 +6,9 @@ import Footer from '../Footer'
 const Niveles = () => {
     return (
         <>
-            <NavBar></NavBar>
 
             <div>Niveles</div>
 
-            <footer></footer>
 
 
         </>

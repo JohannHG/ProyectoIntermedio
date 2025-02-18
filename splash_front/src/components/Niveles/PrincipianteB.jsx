@@ -5,10 +5,8 @@ import Footer from '../Footer'
 const PrincipianteB = () => {
     return (
         <>
-            <NavBar />
 
             <div>PrincipianteB</div>
-            <Footer />
         </>
 
     )

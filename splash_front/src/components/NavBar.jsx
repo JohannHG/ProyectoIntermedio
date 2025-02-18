@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { FaSquareWhatsapp, FaFacebook, FaPhone, FaEnvelope, FaCircleXmark, FaBars } from 'react-icons/fa6'
 import splashLogo from "../img/splash.jpg";
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
 
@@ -53,24 +54,36 @@ const NavBar = () => {
 
                 {/* Menú de navegación (oculto en móviles) */}
                 <ul className="hidden md:flex gap-6 text-lg font-semibold">
-                    <li className="hover:text-gray-300 cursor-pointer">Inicio</li>
-                    <li className="hover:text-gray-300 cursor-pointer">Horarios y Precios</li>
+                    <li className="hover:text-gray-300 cursor-pointer">
+                        <Link to="/">Inicio</Link></li>
+                    <li className="hover:text-gray-300 cursor-pointer">
+                        <Link to="/horarios-precios">Horarios y Precios</Link></li>
                     <li className="relative group">
-                        <span className="hover:text-gray-300 cursor-pointer">Niveles</span>
+                        <span className="hover:text-gray-300 cursor-pointer">
+                            <Link to="/niveles">Niveles</Link></span>
                         {/* Dropdown */}
                         <ul className="absolute hidden group-hover:block bg-[#003DA5] text-white mt-2 w-40 shadow-lg">
-                            <li className="px-4 py-2 hover:bg-blue-700 cursor-pointer">Principiante A</li>
-                            <li className="px-4 py-2 hover:bg-blue-700 cursor-pointer">Principiante B</li>
-                            <li className="px-4 py-2 hover:bg-blue-700 cursor-pointer">Intermedio A</li>
-                            <li className="px-4 py-2 hover:bg-blue-700 cursor-pointer">Intermedio B</li>
-                            <li className="px-4 py-2 hover:bg-blue-700 cursor-pointer">Avanzado</li>
-                            <li className="px-4 py-2 hover:bg-blue-700 cursor-pointer">Matroclase</li>
-                            <li className="px-4 py-2 hover:bg-blue-700 cursor-pointer">Personalizada</li>
+                            <li className="px-4 py-2 hover:bg-blue-700 cursor-pointer">
+                                <Link to="/niveles/principianteA">Principiante A</Link></li>
+                            <li className="px-4 py-2 hover:bg-blue-700 cursor-pointer">
+                                <Link to="/niveles/principianteB">Principiante B</Link></li>
+                            <li className="px-4 py-2 hover:bg-blue-700 cursor-pointer">
+                                <Link to="/niveles/intermedioA">Intermedio A</Link></li>
+                            <li className="px-4 py-2 hover:bg-blue-700 cursor-pointer">
+                                <Link to="/niveles/principianteB">Intermedio B</Link></li>
+                            <li className="px-4 py-2 hover:bg-blue-700 cursor-pointer">
+                                <Link to="/niveles/avanzados">Avanzado</Link></li>
+                            <li className="px-4 py-2 hover:bg-blue-700 cursor-pointer">
+                                <Link to="/niveles/matro">Matroclase</Link></li>
+                            <li className="px-4 py-2 hover:bg-blue-700 cursor-pointer">
+                                <Link to="/niveles/personalizada">Personalizada</Link></li>
                         </ul>
                     </li>
 
-                    <li className="hover:text-gray-300 cursor-pointer">Galería</li>
-                    <li className="hover:text-gray-300 cursor-pointer">Eventos</li>
+                    <li className="hover:text-gray-300 cursor-pointer">
+                        <Link to="/galeria">Galería</Link></li>
+                    <li className="hover:text-gray-300 cursor-pointer">
+                        <Link to="/eventos"> Eventos</Link></li>
                 </ul>
             </div>
 
@@ -88,11 +101,11 @@ const NavBar = () => {
 
                 {/* Enlaces del menú móvil */}
                 <ul className="flex flex-col gap-6 text-lg p-6">
-                    <li className="hover:text-gray-300 cursor-pointer">Inicio</li>
-                    <li className="hover:text-gray-300 cursor-pointer">Programas</li>
-                    <li className="hover:text-gray-300 cursor-pointer">Precios</li>
-                    <li className="hover:text-gray-300 cursor-pointer">Galería</li>
-                    <li className="hover:text-gray-300 cursor-pointer">Eventos</li>
+                    <li className="hover:text-gray-300 cursor-pointer"><Link to="/">Inicio</Link></li>
+                    <li className="hover:text-gray-300 cursor-pointer"><Link to="/horarios-precios">Horarios y Precios</Link></li>
+                    <li className="hover:text-gray-300 cursor-pointer"><Link to="/niveles">Niveles</Link></li>
+                    <li className="hover:text-gray-300 cursor-pointer"><Link to="/galeria">Galería</Link></li>
+                    <li className="hover:text-gray-300 cursor-pointer"><Link to="/eventos"> Eventos</Link></li>
                 </ul>
             </div>
         </nav>

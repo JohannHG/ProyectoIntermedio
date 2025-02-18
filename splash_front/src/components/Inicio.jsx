@@ -5,11 +5,10 @@ import Footer from './Footer'
 const Inicio = () => {
   return (
     <>
-    <NavBar/>
-    
-    <h1>Inicio</h1>
-    
-    <Footer/>
+
+      <h1>Inicio</h1>
+
+
     </>
   )
 }

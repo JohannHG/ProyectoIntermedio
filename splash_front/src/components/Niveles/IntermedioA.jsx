@@ -5,11 +5,9 @@ import Footer from '../Footer'
 const IntermedioA = () => {
     return (
         <>
-            <NavBar />
 
             <h1>Intermedio a</h1>
 
-            <Footer />
 
         </>
 

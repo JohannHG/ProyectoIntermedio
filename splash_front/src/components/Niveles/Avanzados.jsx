@@ -5,9 +5,9 @@ import Footer from '../Footer'
 const Avanzados = () => {
     return (
         <>
-            <NavBar />
+
             <div>Avanzados</div>
-            <Footer />
+
         </>
 
     )

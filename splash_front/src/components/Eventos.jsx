@@ -5,9 +5,7 @@ import Footer from './Footer'
 const Eventos = () => {
     return (
         <>
-            <NavBar />
             <div>Eventos</div>
-            <Footer />
         </>
 
 

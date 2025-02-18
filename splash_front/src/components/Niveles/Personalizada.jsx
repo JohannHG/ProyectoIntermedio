@@ -5,9 +5,7 @@ import Footer from '../Footer'
 const Personalizada = () => {
     return (
         <>
-            <NavBar />
             <div>Personalizada</div>
-            <Footer />
         </>
 
     )
