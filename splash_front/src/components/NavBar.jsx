@@ -61,23 +61,7 @@ const NavBar = () => {
                     <li className="relative group">
                         <span className="hover:text-gray-300 cursor-pointer">
                             <Link to="/niveles">Niveles</Link></span>
-                        {/* Dropdown */}
-                        <ul className="absolute hidden group-hover:block bg-[#003DA5] text-white mt-2 w-40 shadow-lg">
-                            <li className="px-4 py-2 hover:bg-blue-700 cursor-pointer">
-                                <Link to="/niveles/principianteA">Principiante A</Link></li>
-                            <li className="px-4 py-2 hover:bg-blue-700 cursor-pointer">
-                                <Link to="/niveles/principianteB">Principiante B</Link></li>
-                            <li className="px-4 py-2 hover:bg-blue-700 cursor-pointer">
-                                <Link to="/niveles/intermedioA">Intermedio A</Link></li>
-                            <li className="px-4 py-2 hover:bg-blue-700 cursor-pointer">
-                                <Link to="/niveles/principianteB">Intermedio B</Link></li>
-                            <li className="px-4 py-2 hover:bg-blue-700 cursor-pointer">
-                                <Link to="/niveles/avanzados">Avanzado</Link></li>
-                            <li className="px-4 py-2 hover:bg-blue-700 cursor-pointer">
-                                <Link to="/niveles/matro">Matroclase</Link></li>
-                            <li className="px-4 py-2 hover:bg-blue-700 cursor-pointer">
-                                <Link to="/niveles/personalizada">Personalizada</Link></li>
-                        </ul>
+                        
                     </li>
 
                     <li className="hover:text-gray-300 cursor-pointer">
