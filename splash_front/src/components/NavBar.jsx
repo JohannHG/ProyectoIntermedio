@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FaSquareWhatsapp, FaFacebook, FaPhone, FaEnvelope, FaCircleXmark, FaBars } from 'react-icons/fa6'
+import { FaSquareWhatsapp, FaFacebook, FaPhone, FaEnvelope, FaCircleXmark, FaBars, FaPersonSwimming } from 'react-icons/fa6'
 import splashLogo from "../img/splash.jpg";
 import { Link } from 'react-router-dom';
 
@@ -30,7 +30,19 @@ const NavBar = () => {
                         <FaSquareWhatsapp size={28} />
                         Contáctanos
                     </a>
+
+
+                    <a
+                        className="bg-[#003DA5] text-white px-4 py-2 flex items-center gap-2 rounded-md hover:bg-blue-500"
+                    >
+                        <FaPersonSwimming size={28} />
+                        <span className=" cursor-pointer">
+                            <Link to="/administrador">Administrador</Link></span>
+
+                    </a>
+
                 </div>
+
             </div>
 
             {/* Menú principal */}
@@ -61,7 +73,7 @@ const NavBar = () => {
                     <li className="relative group">
                         <span className="hover:text-gray-300 cursor-pointer">
                             <Link to="/niveles">Niveles</Link></span>
-                        
+
                     </li>
 
                     <li className="hover:text-gray-300 cursor-pointer">
@@ -92,7 +104,7 @@ const NavBar = () => {
                     <li className="hover:text-gray-300 cursor-pointer"><Link to="/eventos"> Eventos</Link></li>
                 </ul>
             </div>
-        </nav>
+        </nav >
     )
 }
 
