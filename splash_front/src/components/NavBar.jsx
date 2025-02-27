@@ -37,7 +37,7 @@ const NavBar = () => {
                     >
                         <FaPersonSwimming size={28} />
                         <span className=" cursor-pointer">
-                            <Link to="/administrador">Administrador</Link></span>
+                            <Link to="/login">Administrador</Link></span>
 
                     </a>
 

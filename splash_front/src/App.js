@@ -8,7 +8,7 @@ import HorariosPrecios from './components/HorariosPrecios';
 import Galeria from './components/Galeria';
 import Eventos from './components/Eventos';
 import Niveles from './components/Niveles';
-import Registro from './components/Registro';
+import Recuperar from './components/Recuperar';
 import Login from './components/Login';
 import Administrador from "./components/Administrador";
 
@@ -24,7 +24,7 @@ function App() {
           <Route path="/galeria" element={<Galeria />} />
           <Route path="/eventos" element={<Eventos />} />
           <Route path="/niveles" element={<Niveles />} />
-          <Route path="/registro" element={<Registro />} />
+          <Route path="/recuperar" element={<Recuperar />} />
           <Route path="/login" element={<Login />} />
           <Route path="/administrador" element={<Administrador />} />
 
